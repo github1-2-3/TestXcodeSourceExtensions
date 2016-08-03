@@ -13,6 +13,10 @@
 		B181B3FF1D523FF7005E94CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B181B3FD1D523FF7005E94CB /* Main.storyboard */; };
 		B181B40A1D523FF7005E94CB /* TestLiteralsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181B4091D523FF7005E94CB /* TestLiteralsTests.swift */; };
 		B181B4151D523FF7005E94CB /* TestLiteralsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181B4141D523FF7005E94CB /* TestLiteralsUITests.swift */; };
+		B181B4291D52403B005E94CB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B181B4281D52403B005E94CB /* Cocoa.framework */; };
+		B181B42E1D52403B005E94CB /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181B42D1D52403B005E94CB /* SourceEditorExtension.swift */; };
+		B181B4301D52403B005E94CB /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181B42F1D52403B005E94CB /* SourceEditorCommand.swift */; };
+		B181B4341D52403B005E94CB /* Test Convert to  Literal.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B181B4261D52403A005E94CB /* Test Convert to  Literal.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +34,28 @@
 			remoteGlobalIDString = B181B3F31D523FF7005E94CB;
 			remoteInfo = TestLiterals;
 		};
+		B181B4321D52403B005E94CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B181B3EC1D523FF7005E94CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B181B4251D52403A005E94CB;
+			remoteInfo = "Test Convert to  Literal";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B181B4381D52403B005E94CB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B181B4341D52403B005E94CB /* Test Convert to  Literal.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B181B3F41D523FF7005E94CB /* TestLiterals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLiterals.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +70,12 @@
 		B181B4101D523FF7005E94CB /* TestLiteralsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestLiteralsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B181B4141D523FF7005E94CB /* TestLiteralsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLiteralsUITests.swift; sourceTree = "<group>"; };
 		B181B4161D523FF7005E94CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B181B4261D52403A005E94CB /* Test Convert to  Literal.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Test Convert to  Literal.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B181B4281D52403B005E94CB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B181B42C1D52403B005E94CB /* Test_Convert_to__Literal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Test_Convert_to__Literal.entitlements; sourceTree = "<group>"; };
+		B181B42D1D52403B005E94CB /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		B181B42F1D52403B005E94CB /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		B181B4311D52403B005E94CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +100,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B181B4231D52403A005E94CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B181B4291D52403B005E94CB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +117,8 @@
 				B181B3F61D523FF7005E94CB /* TestLiterals */,
 				B181B4081D523FF7005E94CB /* TestLiteralsTests */,
 				B181B4131D523FF7005E94CB /* TestLiteralsUITests */,
+				B181B42A1D52403B005E94CB /* Test Convert to  Literal */,
+				B181B4271D52403B005E94CB /* Frameworks */,
 				B181B3F51D523FF7005E94CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +129,7 @@
 				B181B3F41D523FF7005E94CB /* TestLiterals.app */,
 				B181B4051D523FF7005E94CB /* TestLiteralsTests.xctest */,
 				B181B4101D523FF7005E94CB /* TestLiteralsUITests.xctest */,
+				B181B4261D52403A005E94CB /* Test Convert to  Literal.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +164,33 @@
 			path = TestLiteralsUITests;
 			sourceTree = "<group>";
 		};
+		B181B4271D52403B005E94CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B181B4281D52403B005E94CB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B181B42A1D52403B005E94CB /* Test Convert to  Literal */ = {
+			isa = PBXGroup;
+			children = (
+				B181B42D1D52403B005E94CB /* SourceEditorExtension.swift */,
+				B181B42F1D52403B005E94CB /* SourceEditorCommand.swift */,
+				B181B4311D52403B005E94CB /* Info.plist */,
+				B181B42B1D52403B005E94CB /* Supporting Files */,
+			);
+			path = "Test Convert to  Literal";
+			sourceTree = "<group>";
+		};
+		B181B42B1D52403B005E94CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B181B42C1D52403B005E94CB /* Test_Convert_to__Literal.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,10 +201,12 @@
 				B181B3F01D523FF7005E94CB /* Sources */,
 				B181B3F11D523FF7005E94CB /* Frameworks */,
 				B181B3F21D523FF7005E94CB /* Resources */,
+				B181B4381D52403B005E94CB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B181B4331D52403B005E94CB /* PBXTargetDependency */,
 			);
 			name = TestLiterals;
 			productName = TestLiterals;
@@ -178,6 +249,23 @@
 			productReference = B181B4101D523FF7005E94CB /* TestLiteralsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B181B4251D52403A005E94CB /* Test Convert to  Literal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B181B4351D52403B005E94CB /* Build configuration list for PBXNativeTarget "Test Convert to  Literal" */;
+			buildPhases = (
+				B181B4221D52403A005E94CB /* Sources */,
+				B181B4231D52403A005E94CB /* Frameworks */,
+				B181B4241D52403A005E94CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Test Convert to  Literal";
+			productName = "Test Convert to  Literal";
+			productReference = B181B4261D52403A005E94CB /* Test Convert to  Literal.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +293,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = B181B3F31D523FF7005E94CB;
 					};
+					B181B4251D52403A005E94CB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CAE4XXMP5G;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = B181B3EF1D523FF7005E94CB /* Build configuration list for PBXProject "TestLiterals" */;
@@ -223,6 +316,7 @@
 				B181B3F31D523FF7005E94CB /* TestLiterals */,
 				B181B4041D523FF7005E94CB /* TestLiteralsTests */,
 				B181B40F1D523FF7005E94CB /* TestLiteralsUITests */,
+				B181B4251D52403A005E94CB /* Test Convert to  Literal */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +339,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B181B40E1D523FF7005E94CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B181B4241D52403A005E94CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,6 +380,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B181B4221D52403A005E94CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B181B42E1D52403B005E94CB /* SourceEditorExtension.swift in Sources */,
+				B181B4301D52403B005E94CB /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +401,11 @@
 			isa = PBXTargetDependency;
 			target = B181B3F31D523FF7005E94CB /* TestLiterals */;
 			targetProxy = B181B4111D523FF7005E94CB /* PBXContainerItemProxy */;
+		};
+		B181B4331D52403B005E94CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B181B4251D52403A005E94CB /* Test Convert to  Literal */;
+			targetProxy = B181B4321D52403B005E94CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -399,6 +514,7 @@
 		B181B41A1D523FF7005E94CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CAE4XXMP5G;
@@ -413,6 +529,7 @@
 		B181B41B1D523FF7005E94CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CAE4XXMP5G;
@@ -482,6 +599,38 @@
 			};
 			name = Release;
 		};
+		B181B4361D52403B005E94CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Test Convert to  Literal/Test_Convert_to__Literal.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CAE4XXMP5G;
+				INFOPLIST_FILE = "Test Convert to  Literal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hhugofalkman.TestLiterals.Test-Convert-to--Literal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B181B4371D52403B005E94CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Test Convert to  Literal/Test_Convert_to__Literal.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CAE4XXMP5G;
+				INFOPLIST_FILE = "Test Convert to  Literal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hhugofalkman.TestLiterals.Test-Convert-to--Literal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -515,6 +664,14 @@
 			buildConfigurations = (
 				B181B4201D523FF7005E94CB /* Debug */,
 				B181B4211D523FF7005E94CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B181B4351D52403B005E94CB /* Build configuration list for PBXNativeTarget "Test Convert to  Literal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B181B4361D52403B005E94CB /* Debug */,
+				B181B4371D52403B005E94CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
